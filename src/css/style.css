@@ -6,13 +6,12 @@
   margin: 0;
 }
 
-.button-container {
+.container {
   display: flex;
   justify-content: space-around;
-  background-color: #f0f33d;
-  border: 1px solid #222222;
   margin-top: 30vh;
   padding: 10px;
+  position: relative;
 }
 
 .button {
@@ -20,13 +19,14 @@
   padding: 10px;
   border: 1px solid #222222;
   border-radius: 10px;
+  box-shadow: 10px 5px 10px #222222;
 }
 
 .popover {
   width: 30vw;
   border: 1px solid #222222;
   border-radius: 10px;
-  margin: 5px;
+  position: absolute;
 }
 
 .popover-title {

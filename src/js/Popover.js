@@ -24,9 +24,7 @@ export default class Popover {
   }
 
   showPopover() {
-    document.body.appendChild(this.html);
-    // отцентровать
-    // const { top, left } = this.relatedElement.getBoundingClientRect();
+    this.relatedElement.parentElement.appendChild(this.html);
     const { offsetTop: top, offsetLeft: left, offsetWidth: width } = this.relatedElement;
     this.html.style.top = `${top - this.html.offsetHeight - 5}px`;
     this.html.style.left = `${left + width / 2 - this.html.offsetWidth / 2}px`;
